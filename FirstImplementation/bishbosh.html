@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bish Bosh</title>
+</head>
+<body>
+
+<h1>Bish Bosh Exercise</h1>
+<p>Open the console to see the results.</p>
+
+<script>
+    // Range is up to 100, we start with 1
+    for (let n = 1; n <= 100; n++) {
+        let output = "";
+
+        // If divided by 3 and remainder 0, replace with Bish
+        if (n % 3 === 0)
+            output += "Bish";
+
+        // If divided by 4 and remainder 0, replace with Bosh
+        if (n % 4 === 0)
+            output += "Bosh";
+
+        // If not divisible by either 3 or 4, use the number itself
+        if (output === "")
+            output = n;
+
+        console.log(output);
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bish Bosh 2.0</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<main>
+
+<h1>Bish Bosh 2.0</h1>
+    <p>Application purpose is to calculate which numbers are divisible by two different values. If a number requires one or the other specified value, then it displays the text equivalent to it. For example 3 and 6 are both divisible by 3 so both will display Bish. </p>
+    <p>If the provided number fills both required values, then it displays the output as two words together. For example 12 is both divisible by 3 and 4 so it will display BishBosh.</p>
+    <h3>Provide your custom input for Bish, Bosh, and the range to generate the sequence or click on the button to test default values.</h3>
+
+<div class="input-container">
+    <label for="bishValue">Bish value (default is 3):</label>
+    <input type="number" id="bishValue" value="3">
+    
+    <label for="boshValue">Bosh value (default is 4):</label>
+    <input type="number" id="boshValue" value="4">
+
+    <label for="rangeValue">Range (default is 100):</label>
+    <input type="number" id="rangeValue" value="100">
+
+    <button id="generateBtn">Generate Bish-Bosh</button> 
+</div>
+
+<h2>Results:</h2>
+<button id="toggleColorsBtn">Fun button!</button>
+<div id="results"></div>
+
+</main>
+
+<footer>
+    <p>&copy; 2023 Kasleet. </p>
+    <p>All rights reserved.</p>
+</footer>
+
+<script src="bishbosh.js"></script>
+
+</body>
+</html>
